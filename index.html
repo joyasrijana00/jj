@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>শুভ বিবাহ – অতশ্রী & বলরাম</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Noto Sans Bengali", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fff1f6, #ffe4ec, #ffe9db);
+      padding: 15px;
+      overflow-x: hidden;
+    }
+
+    /* Flower Petals */
+    .petal {
+      position: fixed;
+      top: -10vh;
+      left: 50%;
+      font-size: 24px;
+      animation: fall 7s linear infinite;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      50% { transform: translateY(50vh) rotate(150deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Container */
+    .card {
+      max-width: 430px;
+      margin: auto;
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 22px;
+      border: 2px solid rgba(255, 185, 220, 0.85);
+      box-shadow: 0 8px 26px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    /* Title */
+    .title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      color: #b1234e;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #ff3b84;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* Couple Names with Glow */
+    .couple {
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+      color: #ff4b90;
+      animation: glow 2s infinite alternate;
+      margin-bottom: 14px;
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 6px rgba(255,60,120,0.6),
+                     0 0 14px rgba(255,153,60,0.5);
+      }
+      100% {
+        text-shadow: 0 0 14px rgba(255,60,120,1),
+                     0 0 22px rgba(255,153,60,1);
+      }
+    }
+
+    /* Round Photo Frame */
+    .photo-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .circle-frame {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(135deg,#fdc2d5,#ffcf96,#ffc1e7);
+      margin: auto;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .circle-frame-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #fff5fa;
+    }
+
+    .circle-frame-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #b1234e;
+      margin-top: 6px;
+    }
+
+    /* Small heading */
+    .head {
+      font-size: 19px;
+      margin: 12px 0 6px;
+      color: #b12b4a;
+      border-left: 4px solid #ff9f43;
+      padding-left: 10px;
+    }
+
+    /* Details Box */
+    .box {
+      background: #fff8fb;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid #ffd0e4;
+      margin-bottom: 14px;
+    }
+
+    .box p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #572a34;
+    }
+
+    .label {
+      font-weight: 700;
+      color: #b2234e;
+    }
+
+    /* Signature */
+    .signature {
+      text-align: center;
+      margin-top: 22px;
+      font-size: 14px;
+      font-style: italic;
+      color: #b33a55;
+    }
+
+    .signature span {
+      font-size: 24px;
+      font-family: "Pacifico", cursive;
+      display: block;
+      margin-top: 5px;
+      background: linear-gradient(90deg, #ff4b8b, #ffa645);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 6px rgba(255,150,180,0.3);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Falling Flowers -->
+  <div class="petal">🌸</div>
+  <div class="petal">🌺</div>
+  <div class="petal">🌼</div>
+  <div class="petal">❀</div>
+  <div class="petal">✿</div>
+
+  <div class="card">
+
+    <div class="subtitle">👑 শুভ বিবাহ 👑</div>
+    <div class="couple">কল্যাণীয়া অতশ্রী & কল্যাণীয় বলরাম</div>
+
+    <!-- Bride -->
+    <h3 class="head">👰 কনে</h3>
+    <div class="photo-section">
+      <div class="circle-frame">
+        <div class="circle-frame-inner">
+          <img src="bride.jpg">
+        </div>
+      </div>
+      <div class="photo-name">কল্যাণীয়া অতশ্রী</div>
+    </div>
+
+    <!-- Groom -->
+    <h3 class="head">🤵 বর</h3>
+    <div class="photo-section">
+      <div class="circle-frame">
+        <div class="circle-frame-inner">
+          <img src="groom.jpg">
+        </div>
+      </div>
+      <div class="photo-name">কল্যাণীয় বলরাম</div>
+    </div>
+
+    <h3 class="head">💌 আমন্ত্রণ পত্র</h3>
+
+    <div class="box">
+      <p><b>প্রিয় মহোদয়/মহোদয়া,</b><br><br>
+      আমাদের প্রিয় <b>কল্যাণীয়া অতশ্রী</b> ও <b>কল্যাণীয় বলরাম</b>–এর পবিত্র বিবাহ আগামী  
+      <b>২০শে মাঘ ১৪৩২ (৩রা ফেব্রুয়ারি ২০২৫)</b> তারিখে অনুষ্ঠিত হতে চলেছে।<br><br>
+      আপনার স্নেহময় উপস্থিতি ও আশীর্বাদে আমরা গর্বিত হব।</p>
+    </div>
+
+    <h3 class="head">📜 স্মারক লিপি</h3>
+
+    <div class="box">
+      <p><span class="label">অনুষ্ঠান :</span> শুভবিবাহ ও প্রীতিভোজ</p>
+      <p><span class="label">সময় :</span> রাত্রি ৮ ঘটিকায়</p>
+      <p><span class="label">স্থান :</span> নিজ বাসভবন, চকদুর্গা দাস, তমলুক</p>
+    </div>
+
+    <div class="box">
+      <p><span class="label">যোগাযোগ :</span> ৯৭৩২৭৯১১৪৬</p>
+      <p><span class="label">পথনির্দেশ :</span><br>
+      তমলুক–পাঁশকুড়া বাস স্ট্যান্ড → দামোদরপুর → ১০ মিনিট হাঁটা।</p>
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">
+      — Crafted with Love  
+      <span>Joyasri Jana</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
